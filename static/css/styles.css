@@ -94,7 +94,7 @@ h1,h2,h3{
 
 /* Hero */
 .hero {
-background-image: url(../img/doctor.jpg);
+background-image: url("/static/img/doctor.jpg");
 background-repeat: no-repeat;
 background-size:contain ;
 background-position:right ;
