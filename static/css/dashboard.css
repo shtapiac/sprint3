@@ -1,0 +1,71 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+  }
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-size: 16px; /*1rem = 10px*/
+    font-family: 'Krub', sans-serif;
+}
+div.menu_superior{
+    width: 100%;
+    height: 8rem;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+  }
+div.menu_superior h1{
+  text-align: left;
+  font-size: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 80%;
+}
+  
+div#menu{
+  
+  position: absolute;
+  width:25rem;
+  height: 100%;
+  background-color: var(--gris);
+  text-align: center;
+}
+  
+  
+div.rutas {
+  width: 12 rem;
+  height: 4rem;
+  margin-top: 5rem;
+
+}
+div.rutas a{
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 1rem;
+}
+div.rutas a:hover{
+  background-color: var(--blanco);
+  color: var(--secundario);
+}
+
+div.contenedor-body{
+  margin-left: 25rem;
+}
