@@ -11,8 +11,15 @@ app = Flask(__name__)
 app.secret_key = "Sprint3grupo56"
 
 
-@app.route('/')
 @app.route('/dashboard')
-def index():
+def dashboard():
     return render_template("dashboard.html")
-    
+
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template("index.html")
+
+@app.route('/cliente')
+def cliente():
+    return render_template("cliente.html")
