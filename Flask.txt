@@ -1,0 +1,86 @@
+https://trends.google.com/trends/?geo=CO
+
+
+# Instalar virtualenv con pip:
+LINUX: pip3 install virtualenv
+WINDOWS: pip install virtualenv
+
+
+# Instalar virtualenv SERVIDOR AWS (como super usuario root):
+apt install python3-virtualenv
+
+
+# Ver versión del virtualenv:
+LINUX: virtualenv --version
+WINDOWS: puedes probar creando un entorno.
+
+
+# Crear entorno virtual llamado env:
+WINDOWS: python –m venv nombre_del_entorno
+LINUX (SERVIDOR AWS: como super usuario root):
+virtualenv env
+
+
+# Activar el entorno virtual (ubicado en la carpeta del proyecto; SERVIDOR AWS: como super usuario root):
+LINUX: source env/bin/activate
+WINDOWS: env\Scripts\activate.bat
+
+
+# Salir del entorno virtual:
+deactivate
+
+
+# Listar las librerías instaladas:
+pip3 list
+
+
+# Instalación del framework Flask (como super usuario root, dentro de la carpeta del proyecto y con entorno virtual activado):
+LINUX: pip3 install flask
+WINDOWS: pip install flask
+
+
+# Desinstalar una librería:
+LINUX: pip3 uninstall flask
+WINDOWS: pip uninstall flask
+
+
+# Mostrar la información de un paquete/librería:
+LINUX: pip3 show flask
+WINDOWS: pip show flask
+
+
+# Extensiones de Visual Studio Code sugeridas:
+https://marketplace.visualstudio.com/items?itemName=cstrap.flask-snippets
+https://marketplace.visualstudio.com/items?itemName=WyattFerguson.jinja2-snippet-kit
+https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja
+
+
+# Actualiza la variable, será la App que iniciará el Servidor Web (dentro de la carpeta del proyecto y con entorno virtual activado; SERVIDOR AWS: como super usuario root):
+LINUX: export FLASK_APP=main
+WINDOWS: set FLASK_APP=main
+
+
+# Actualiza la variable, se ejecutará en modo desarrollo el Servidor Web (dentro de la carpeta del proyecto y con entorno virtual activado; SERVIDOR AWS: como super usuario root):
+LINUX: export FLASK_ENV=development
+WINDOWS: set FLASK_ENV=development
+
+
+# Para inicie por el puerto 80 (dentro de la carpeta del proyecto y con entorno virtual activado; SERVIDOR AWS: como super usuario root):
+export FLASK_RUN_PORT=80
+
+
+# Para que que permita la dirección pública (dentro de la carpeta del proyecto y con entorno virtual activado; SERVIDOR AWS: como super usuario root):  
+flask run --host 0.0.0.0
+
+
+# Para crea correo:
+pip install validate_email
+pip install yagmail[all]
+import yagmail as yagmail
+#modificar la siguiente linea con tu informacion personal
+yag = yagmail.SMTP('', '') 
+yag.send(to=email, subject='Activa tu cuenta',
+     contents='Bienvenido, usa este link para activar tu cuenta ')
+flash('Revisa tu correo para activar tu cuenta')
+
+
