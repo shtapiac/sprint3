@@ -5,6 +5,8 @@ from flask import flash
 from flask import redirect, url_for
 from utils import isUsernameValid, isEmailValid, isPasswordValid
 from forms import Formulario_Login
+from dshbd import headings #esto se usa para los datos de la tabla del dashboard
+from dshbd import data #esto se usa para los datos de la tabla del dashboard
 
 
 app = Flask(__name__)
@@ -13,7 +15,8 @@ app.secret_key = "Sprint3grupo56"
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template("dashboard.html")
+    return render_template("dashboard.html", headings=headings, data=data)
+    
 
 @app.route('/')
 @app.route('/index')

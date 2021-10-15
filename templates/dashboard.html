@@ -32,8 +32,57 @@
 
         </div>
     </div>
-    <div class="contenedor-body">
-        jajaisjas
+    <div >
+
+        <h1 class = "tablaadminh1"> Dashboard administrativo </h1>
+        <br>
+        <br>
+        <br>
+        <table class = "tablaadmin">
+
+            <tr class = "tablaadminheader">
+            
+                {% for header in headings %}
+                <th class = "tablaadmincelda"> {{header}}  </th>
+                {% endfor %}
+                
+            </tr>
+
+            {% for row in data %}
+                    <tr class = "tablaadmincolumn">        
+                    <td>  <input type="checkbox"     </td>
+                    {% for cell in row %}
+                    
+                    <td class = "tablaadmincelda"> {{cell}} </td>
+                    
+                    
+                    {% endfor %}
+                    
+                {% endfor %}   
+
+
+                    </tr>
+            
+        
+                
+
+        </table>
+
+        <div class = "divdashbotones">
+
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" class = "dashbotones" value = "Editar médico">     
+            <input type="submit" class = "dashbotones" value = "Agregar médico">
+            <input type="submit" class = "dashbotones" value = "Eliminar médico">
+
+
+        </div>
+
+
+
     </div>
 </body>
 </html>

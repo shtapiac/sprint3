@@ -69,3 +69,42 @@ div.rutas a:hover{
 div.contenedor-body{
   margin-left: 25rem;
 }
+
+
+.tablaadmin{
+margin-left: auto;
+margin-right: auto;
+}
+
+.tablaadmincelda {
+  padding: 15px;
+  text-align: center;
+}
+
+.tablaadminheader
+{
+text-align: center;
+}
+
+.tablaadmincolumn:nth-child(even)
+{
+background-color: darkgrey;
+}
+
+.tablaadminh1
+{
+text-align: center;  
+}
+
+.divdashbotones{
+
+width:100%;
+
+}
+
+.dashbotones{
+
+  float:right;
+  width:15%; 
+
+}
