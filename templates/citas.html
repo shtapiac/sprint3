@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de Citas</title>
+    <title>Dashboard</title>
     <link rel="preload" href="static/css/normalize.css" as="style">
     <link rel="stylesheet" href="static/css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="static/css/dashboard.css" as="style">
-    <link rel="stylesheet" href="static/css/dashboard.css">
+    <link rel="preload" href="static/css/styles.css" as="style">
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
@@ -21,53 +20,46 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <circle cx="12" cy="7" r="4" />
             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-          </svg>
+            </svg>
     </div>
     <div id="menu">
 
         <div class="rutas">
-            <a href="#">Inicio</a>
-            <a href="citas.html">Citas</a>
+            <a href="/inicio">Inicio</a>
+            <a href="#">Citas</a>
             <a href="#">Contacto</a>
-            <a href="index.html">Cerrar Sesión</a>
+            <a href="/">Cerrar Sesión</a>
 
         </div>
-    </div> 
-    <div class="title">
-        <h2>Camino Simbón Bolivar</h2>
-        
     </div>
-    
-    <div id="detalleCita">
-        <section class="cita">
-            <p>Detalle cita</p>
-            <li>
-                <span> Nombre completo: Jorge Camilo Torres Cruz</span>    
-            </li>
-            <li>
-                <span>Identificacion paciente: 1.024.539.624</span> 
-            </li>
-            <li>
-                <span>Doctor: Luis Felipe Contreras</span>   
-            </li>
-            <li>
-                <span>Fecha y hora: 29/03/2022 17:00</span> 
-            </li>
-            <li>
-                <span>Diagnostico: N/A</span> 
-            </li>
-            <li>
-                <span>Valor a pagar: 3.900 pesos</span> 
-            </li><br>
-            <div id="boton"><a>ver comentario</a></div><br>
-        </section>
-    </div>  
+    <div class="contenedor-inicio">
 
-    <div class=" botones ">
-        <ul>
-            <li><a href="#">Editar cita</a> </li>
-            <li><a href="#">Eliminar cita</a></li>
-        </ul>
+        <h2>Lista de Citas</h2>
+        <section class="lista">
+            <a href="#">crear cita</a>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <a href="/detalles">detalle de cita</a>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <a href="/detalles">detalle de cita</a>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <a href="/detalles">detalle de cita</a>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <a href="/detalles">detalle de cita</a>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <a href="/detalles">detalle de cita</a>
+            </ul>
+        </section>
+
+        <section class="paginacion">
+			<ul>
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</section>
     </div>
 </body>
 </html>

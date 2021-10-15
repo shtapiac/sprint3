@@ -5,7 +5,7 @@ class Formulario_Login(Form):
     usuario = StringField('Usuario', 
     [
         validators.DataRequired(message='Campo requerido.'),
-        validators.Length(min=8, max=25)
+        validators.Length(min=4, max=25)
     ])
     password = PasswordField('Contraseña', 
     [
