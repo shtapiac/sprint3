@@ -26,3 +26,7 @@ def index():
 @app.route('/cliente')
 def cliente():
     return render_template("cliente.html")
+
+@app.route('/citas', methods=['GET', 'POST'])
+def citas():
+    return render_template("citas.html")

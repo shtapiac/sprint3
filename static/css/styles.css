@@ -227,3 +227,78 @@ div.contenedor-inicio{
 	background:#037E8C;
 	font-weight:bold;
 }
+
+#detalleCita{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 15px;
+}
+.cita{
+  
+  margin: 10px;
+  width: 550px;
+  height: 300px;
+  background:white;
+  border: black 1px solid;
+  border-radius: 3px;
+  
+  
+  
+  
+}
+
+.cita p{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.cita li {
+  list-style:  none;
+  padding: 5px 10px;
+}
+
+.cita p{
+  font-weight: bold;
+}
+#boton{
+  width: 180px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: #212121;
+  color: white;
+}
+
+.cita div{
+  display: flex;
+  margin:0px auto;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.botones li{
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.botones li a{
+  background-color: #212121;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
